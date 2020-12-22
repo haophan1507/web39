@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: 'Pixel';
+  src: url('font/Pixel-LCD-7.woff') format('woff');
+}
+
+/* @font-face {
+  font-family: 'Pixel';
+  src: url('./') format('woff');
+}
+.font-robo {
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  }
+  
+  .font-poppins {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  } */
+  
+  
+  @media (max-width: 767px) {
+    .col-2 {
+      width: 100%;
+    }
+  }
+  
+  
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .styleScreen {
+    min-height: calc(100vh - 0px);
+    background: url("https://cdn.hipwallpaper.com/i/73/50/TKjrbw.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonScreen{
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+.styleButtonScreen{
+  display: block;
+  text-decoration: none;
+  color: #F0F8FF ; 
+  background: #9a2d2f ;
+  padding: 10px;
+  border: 3px solid  #4B0082;
+  border-radius: 25px;
+  /* transition: var(--mainTransition) ; */
+  font-family: Pixel, Arial, Helvetica, sans-serif !important;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 27px;
+  text-align: center;
+  text-decoration:  unset ;
+  height: 60px;
+}
+.styleButtonScreen:hover {
+  background: transparent ;
+  color: orange ;
+  text-decoration:  unset ;
+}
+.buttonHomeScreen{
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  min-height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #333;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #333 ;
+}
+.buttonHomeScreen:hover{
+  background: transparent ;
+  color: rgb(63, 54, 37) ;
+}
+  
+  
+  body,
+  h1, h2, h3, h4, h5, h6,
+  blockquote, p, pre,
+  dl, dd, ol, ul,
+  figure,
+  hr,
+  fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+  fieldset {
+    min-width: 0;
+    /* [1] */
+    border: 0;
+  }
+  
+  button {
+    outline: none;
+    background: none;
+    border: none;
+  }
+  
+  /* ==========================================================================
+     #PAGE WRAPPER
+     ========================================================================== */
+  .page-wrapper {
+    min-height: 100vh;
+  }
+  
+  
+  .bg-gra-01 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);;
+    background: linear-gradient(to top, #0a0a0a 0%, #981b1b 100%);
+  }
+  
+  /* ==========================================================================
+     #SPACING
+     ========================================================================== */
+  
+  .p-t-100 {
+    padding-top: 100px;
+  }
+  
+  .p-b-100 {
+    padding-bottom: 100px;
+  }
+  
+  /* ==========================================================================
+     #WRAPPER
+     ========================================================================== */
+  .wrapper {
+    margin: 0 auto;
+   
+  }
+  
+  
+  .wrapper--w780 {
+    max-width: 780px;
+  }
+  
+  
+  /* ==========================================================================
+     #BUTTON
+     ========================================================================== */
+  .btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 33px;
+    font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 18px;
+  }
+  
+  .btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .btn--pill {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  
+  
+  /* ==========================================================================
+     #DATE PICKER
+     ========================================================================== */
+  
+  
+  
+  /* ==========================================================================
+     #FORM
+     ========================================================================== */
+  .input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    background-color: black;
+    padding : 0px 10px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #ccc;
+    right: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: black;
+  }
+  
+  .input--style-3 {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc;
+    background: black ;
+  }
+  .input--style-3:focus {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc;
+    background: black;
+  }
+
+  .input--style-3::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  
+  .input--style-3:-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+  
+  .input--style-3::-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+  
+  .input--style-3:-ms-input-placeholder {
+    color: #ccc;
+  }
+  
+  .input--style-3:-ms-input-placeholder {
+    color: #ccc;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }
+  
+  .card {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+  }
+  
+  .card-3 {
+    background: #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: table;
+  }
+  
+  .card-3 .card-heading {
+    background: url("https://i.pinimg.com/564x/54/2e/5e/542e5eec2cf67415f47d6f3cb34ee00d.jpg") top left/cover no-repeat;
+    display: table-cell;
+    width: 50%;
+  }
+  
+  .card-3 .card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+    display: table-cell;
+  }
+  
+  .link{
+    color: white;
+    font-size: 11px;
+    margin-left: -15px;
+  }
+
+  @media (max-width: 767px) {
+    .card-3 {
+      display: block;
+    }
+    .card-3 .card-heading {
+      display: block;
+      width: 100%;
+      padding-top: 400px;
+      background-position: center center;
+    }
+    .card-3 .card-body {
+      display: block;
+      width: 100%;
+      padding: 37px 30px;
+      padding-bottom: 45px;
+    }
+  }  
+  .listRank{
+    position: fixed;
+    top: 50px; 
+    left: 5px; 
+  }
+  .listRank > li {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: #333;
+    font-family: Pixel, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+  }
+  .listRank li:first-child {
+    font-weight: bold;
+    color: red;
+    text-shadow: 0px 0px 15px red;
+  }
